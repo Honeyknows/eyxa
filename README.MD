@@ -104,7 +104,6 @@ eyxa/
 ├── docker-commands.txt    # Helpful Docker/DB cheat sheet
 ├── docker-compose.yml     # Container orchestration
 ├── Dockerfile             # Multi-stage build for Backend & Dashboard
-├── ROOT_STRAY_FILES_README.MD # Root configuration docs
 └── start.sh               # Quick-start script for Docker + Cloudflare
 ```
 
