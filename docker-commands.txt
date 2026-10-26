@@ -58,3 +58,10 @@ docker exec -it eyxa-edr sqlite3 /app/backend/db/eyxa.db
 
 14. Completely clear the events table manually (without deleting the database file):
 docker exec -it eyxa-edr sqlite3 /app/backend/db/eyxa.db "DELETE FROM events;"
+
+==========================================
+Endpoint Agent Command (Powershell)
+==========================================
+
+15. Run in Admin PowerShell if agent doesn't connects
+Remove-Item -Force "C:\ProgramData\Eyxa\agent-token.bin" -ErrorAction SilentlyContinue
