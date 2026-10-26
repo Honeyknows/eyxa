@@ -150,7 +150,7 @@ def _poll_once(rules: list[CompiledRule]) -> None:
         return
 
     window_start = (
-        datetime.now(timezone.utc) - timedelta(seconds=POLL_SECS)
+        datetime.now(timezone.utc) - timedelta(minutes=5)
     ).strftime("%Y-%m-%dT%H:%M:%SZ")
 
     conn = sqlite3.connect(DB_PATH)

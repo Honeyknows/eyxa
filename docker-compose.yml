@@ -4,11 +4,8 @@ services:
       context: .
       dockerfile: Dockerfile
     container_name: eyxa-edr
-    ports:
-      - "8443:8443"
+    network_mode: "host"
     volumes:
-      # Named volume - persists the SQLite database across container restarts.
-      # init_db() creates eyxa.db on first boot if it does not exist.
       - eyxa_db:/app/backend/db
     restart: unless-stopped
 
